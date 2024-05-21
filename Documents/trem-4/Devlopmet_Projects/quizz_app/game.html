@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quick Quiz - Play</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gameStyles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="quizContainer" class="center-column">
+        <div id="hud">
+          <div id="hudItem">
+            <p id="progressLabel" class="hudLabel">
+              Question
+            </p>
+            <div id="progress">
+              <div id="progressFull"></div>
+            </div>
+          </div>
+          <div id="hudItem">
+            <p class="hudLabel">
+              Score
+            </p>
+            <h1 class="hudValue" id="scoreDisplay">
+              0
+            </h1>
+          </div>
+        </div>
+        <h2 id="quizQuestion">What is the answer to this question?</h2>
+        <div class="answerContainer">
+          <p class="answerLabel">A</p>
+          <p class="answerText" data-number="1">Option 1</p>
+        </div>
+        <div class="answerContainer">
+          <p class="answerLabel">B</p>
+          <p class="answerText" data-number="2">Option 2</p>
+        </div>
+        <div class="answerContainer">
+          <p class="answerLabel">C</p>
+          <p class="answerText" data-number="3">Option 3</p>
+        </div>
+        <div class="answerContainer">
+          <p class="answerLabel">D</p>
+          <p class="answerText" data-number="4">Option 4</p>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
